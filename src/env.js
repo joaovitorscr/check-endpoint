@@ -20,7 +20,8 @@ export const env = createEnv({
    * `NEXT_PUBLIC_`.
    */
   client: {
-    NEXT_PUBLIC_CLERK_PUBLISHABLE_KEY: z.string()
+    NEXT_PUBLIC_CLERK_PUBLISHABLE_KEY: z.string(),
+    NEXT_PUBLIC_CLERK_SIGN_IN_URL: z.string()
   },
 
   /**
@@ -31,6 +32,7 @@ export const env = createEnv({
     POSTGRES_URL: process.env.POSTGRES_URL,
     NODE_ENV: process.env.NODE_ENV,
     NEXT_PUBLIC_CLERK_PUBLISHABLE_KEY: process.env.NEXT_PUBLIC_CLERK_PUBLISHABLE_KEY,
+    NEXT_PUBLIC_CLERK_SIGN_IN_URL: process.env.NEXT_PUBLIC_CLERK_SIGN_IN_URL,
     CLERK_SECRET_KEY: process.env.CLERK_SECRET_KEY
   },
   /**
