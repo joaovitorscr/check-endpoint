@@ -21,7 +21,7 @@ const createContext = cache(async () => {
   return createTRPCContext({
     headers: heads,
     auth: getAuth(
-      new NextRequest("https://notused.com", { headers: headers() }),
+      new NextRequest("https://notused.com", { headers: await headers() }),
     ),
   });
 });
